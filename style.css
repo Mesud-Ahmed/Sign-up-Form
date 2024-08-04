@@ -1,0 +1,118 @@
+
+        @font-face {
+            font-family: 'Norse-Bold';
+            src: url('Norse-Bold.otf') format('opentype');
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .side-bar {
+            background-image: url(tyler-lastovich-AVzByhROPbs-unsplash.jpg);
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            min-width: 400px;
+        }
+
+        .logo {
+            background: rgb(0 0 0 / 40%);
+            width: 100%;
+            margin-top:300px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .logo img {
+            width: 100px;
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: 'Norse-Bold';
+        }
+
+        .content {
+            margin: 50px 20px;
+            padding: 40px;
+            font-weight: 700;
+        }
+
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            min-width: 500px;
+        }
+
+        .form-row {
+            display: flex;
+            margin-bottom: 15px;
+            font-size: 0.7rem;
+            font-weight: 100;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 50px;
+            border-radius: 3px;
+            color: white;
+            background-color: #596D48;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .form-row div:first-child {
+            margin-right: 50px;
+        }
+
+        p button {
+            border: none;
+            background-color: white;
+            color: #596D48;
+            padding: 2px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        input:valid {
+            border-color: #45a049;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+
+        input:focus {
+            border-color: blue;
+            /* Border color when input is focused */
+            box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+            /* Subtle blue box-shadow when focused */
+            outline: none;
+            /* Remove the default outline */
+        }
+    
